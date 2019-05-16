@@ -1,0 +1,11 @@
+version: '2'
+services:
+  authenendpoint-postgresql:
+    image: postgres:11.2
+    # volumes:
+    #     - ~/volumes/jhipster/AuthenEndPoint/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=AuthenEndPoint
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
